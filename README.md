@@ -9,7 +9,6 @@ then
 
 ```docker-compose up --build -d```
 after that. you probably have a screenshot in app/example.png on your host!
-https://github.com/GoogleChrome/puppeteer
 
 
 this is a skeleton MVP and needs some work. halp. 
@@ -35,4 +34,4 @@ used a bit of https://medium.com/@anephenix/end-to-end-testing-single-page-apps-
 
 
 
-*to-do* this only works in docker atm as locally you need to comment some lines out to run it locally with node
+*to-do* this only works in docker atm, as you need to comment some lines out to run it locally with node
