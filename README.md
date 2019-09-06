@@ -41,4 +41,4 @@ used a bit of https://medium.com/@anephenix/end-to-end-testing-single-page-apps-
 
 
 
-![](rage_pickle.gif])
+![](rage_pickle.gif)
