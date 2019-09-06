@@ -4,6 +4,9 @@
 
 based on a node alpine, uses puppeteer and cucumber to test a very simple koa api
 
+`git clone` this
+then
+
 ```docker-compose up --build -d```
 after that. you probably have a screenshot in app/example.png on your host!
 https://github.com/GoogleChrome/puppeteer
@@ -29,3 +32,7 @@ https://github.com/GoogleChrome/puppeteer
 `node-js`
 
 used a bit of https://medium.com/@anephenix/end-to-end-testing-single-page-apps-and-node-js-apis-with-cucumber-js-and-puppeteer-ad5a519ace0 
+
+
+
+*to-do* this only works in docker atm as locally you need to comment some lines out to run it locally with node
