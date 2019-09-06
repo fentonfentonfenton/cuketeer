@@ -1,6 +1,6 @@
 // Dependencies
 const { Given, When, Then } = require('cucumber');rm 
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 // Defines whether puppeteer runs Chrome in headless mode.
 let headless = true;
 let slowMo = 0;
