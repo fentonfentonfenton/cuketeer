@@ -25,5 +25,7 @@ Feature: Let's do this
 uses:
 
 https://github.com/GoogleChrome/puppeteer
+`cucumber-js`
+`node-js`
 
 used a bit of https://medium.com/@anephenix/end-to-end-testing-single-page-apps-and-node-js-apis-with-cucumber-js-and-puppeteer-ad5a519ace0 
