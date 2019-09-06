@@ -1,0 +1,18 @@
+{
+  "name": "ktech-puppeteer-cucumber",
+  "version": "0.0.1",
+  "description": "A docker image for browser testing with Node's puppeteer and gherkin feature syntax",
+  "scripts": {
+    "test": "npx cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://bitbucket.kobaltmusic.com:7990/projects/ID/repos/docker-puppeteer-cucumber.git"
+  },
+  "author": "Platform",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "puppeteer": "^1.17.0"
+  }
+}

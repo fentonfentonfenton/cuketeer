@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+  koa:
+    image: coogleyao/docker-koa
+  cuckuteer:
+    build: .
+    privileged: true
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
+    depends_on:
+      - koa
