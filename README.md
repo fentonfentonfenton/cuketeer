@@ -3,7 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io//test/github/fentonfentonfenton/cuckuteer/badge.svg?targetFile=package.json)](https://snyk.io//test/github/fentonfentonfenton/cuckuteer?targetFile=package.json)
 
 
-based on a node alpine, uses puppeteer and cucumber to test a very simple koa api
+based on a alpine, uses puppeteer and cucumber to test a very simple koa api with headless chrome
 
 `git clone` this
 then
