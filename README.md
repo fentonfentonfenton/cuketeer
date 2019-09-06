@@ -1,5 +1,6 @@
 # cuckuteer
 
+[![Known Vulnerabilities](https://snyk.io//test/github/fentonfentonfenton/cuckuteer/badge.svg?targetFile=package.json)](https://snyk.io//test/github/fentonfentonfenton/cuckuteer?targetFile=package.json)
 
 
 based on a node alpine, uses puppeteer and cucumber to test a very simple koa api
