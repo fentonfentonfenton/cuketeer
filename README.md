@@ -8,7 +8,7 @@ based on a node alpine, uses puppeteer and cucumber to test a very simple koa ap
 then
 
 ```docker-compose up --build -d```
-after that. you probably have a screenshot in app/example.png on your host!
+after that. you probably now have a screenshot in app/example.png on your host! if not, you just lost the game.
 
 
 this is a skeleton MVP and needs some work. halp. 
