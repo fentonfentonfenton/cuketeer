@@ -1,11 +1,10 @@
 // Dependencies
 const { Given, When, Then } = require('cucumber');
+const puppeteer = require('puppeteer-core');
 
-const puppeteer = require('puppeteer');
 // Defines whether puppeteer runs Chrome in headless mode.
 let headless = true;
 let slowMo = 0;
-let executablePath = '/usr/bin/chromium-browser'
 
 Given('I visit {string}', function (string) {
     (async () => {
