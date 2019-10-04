@@ -1,8 +1,8 @@
-FROM alpine:edge
+FROM node:12-alpine
 
 COPY ./package.json package.json 
 COPY ./features/ features/
-# Installs latest Chromium (76) package.
+# Installs a Chromium package.
 RUN apk add --no-cache \
       chromium \
       nss \
@@ -10,9 +10,7 @@ RUN apk add --no-cache \
       freetype-dev \
       harfbuzz \
       ca-certificates \
-      ttf-freefont \
-      nodejs \
-      npm
+      ttf-freefont
 
 RUN npm install
 
