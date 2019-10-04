@@ -3,7 +3,8 @@ FROM node:12-alpine
 COPY ./package.json package.json 
 COPY ./features/ features/
 # Installs a Chromium package.
-RUN apk add --no-cache \
+RUN   apk update && \
+      apk add --no-cache \
       chromium \
       nss \
       freetype \

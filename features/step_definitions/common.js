@@ -12,6 +12,7 @@ Given('I visit {string}', function (string) {
             executablePath: '/usr/bin/chromium-browser',
             args: ['--disable-dev-shm-usage']
         });
+        const browserVersion = await browser.version();
         const page = await browser.newPage();
         await page.goto(string);
         await page.waitForSelector('pre');
@@ -22,6 +23,7 @@ Given('I visit {string}', function (string) {
           });
       
           console.log(stringIsIncluded);
+          console.log(browserVersion);
         await page.screenshot({path: 'app/example.png'});  
         await browser.close();
       })();
