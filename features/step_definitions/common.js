@@ -1,15 +1,18 @@
 // Dependencies
-const { Given, When, Then } = require('cucumber'); 
+const { Given, When, Then } = require('cucumber');
 const puppeteer = require('puppeteer-core');
+
 // Defines whether puppeteer runs Chrome in headless mode.
+let headless = true;
 let slowMo = 0;
 
 Given('I visit {string}', function (string) {
     (async () => {
         const browser = await puppeteer.launch({
             executablePath: '/usr/bin/chromium-browser',
-            args: ['--disable-dev-shm-usage', '--headless']
+            args: ['--disable-dev-shm-usage']
         });
+        const browserVersion = await browser.version();
         const page = await browser.newPage();
         await page.goto(string);
         await page.waitForSelector('pre');
@@ -20,6 +23,7 @@ Given('I visit {string}', function (string) {
           });
       
           console.log(stringIsIncluded);
+          console.log(browserVersion);
         await page.screenshot({path: 'app/example.png'});  
         await browser.close();
       })();
