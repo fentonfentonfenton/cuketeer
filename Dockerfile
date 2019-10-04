@@ -2,8 +2,7 @@ FROM alpine:edge
 
 COPY ./package.json package.json 
 COPY ./features/ features/
-COPY ./app app/
-# Installs latest Chromium (76) package.
+# Installs a Chromium package.
 RUN apk add --no-cache \
       chromium \
       nss \
