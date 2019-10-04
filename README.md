@@ -3,7 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io//test/github/fentonfentonfenton/cuckuteer/badge.svg?targetFile=package.json)](https://snyk.io//test/github/fentonfentonfenton/cuckuteer?targetFile=package.json)
 
 
-based on a node alpine, uses puppeteer and cucumber to test a very simple koa api
+based on a alpine, uses puppeteer and cucumber to test a very simple koa api with headless chrome
 
 `git clone` this
 then
@@ -37,8 +37,5 @@ used a bit of https://medium.com/@anephenix/end-to-end-testing-single-page-apps-
 
 
 *to-do* this only works in docker atm, as you need to comment some lines out to run it locally with node, and the docker-koa service running. and use localhost:8080 in the feature file.
-
-
-
 
 ![](rage_pickle.gif)

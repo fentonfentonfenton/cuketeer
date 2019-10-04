@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM alpine:edge
 
 COPY ./package.json package.json 
 COPY ./features/ features/
@@ -10,7 +10,9 @@ RUN apk add --no-cache \
       freetype-dev \
       harfbuzz \
       ca-certificates \
-      ttf-freefont
+      ttf-freefont \
+      nodejs \
+      npm
 
 RUN npm install
 
