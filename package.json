@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A docker image for browser testing with Node's puppeteer and gherkin feature syntax",
   "scripts": {
-    "test": "npx cucumber-js"
+    "test": "npx cucumber-js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "cucumber": "^5.1.0",
-    "puppeteer-core": "^1.19.0"
-  }
+    "puppeteer-core": "^1.19.0",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
