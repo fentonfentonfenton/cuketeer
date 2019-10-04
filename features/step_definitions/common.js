@@ -2,15 +2,13 @@
 const { Given, When, Then } = require('cucumber'); 
 const puppeteer = require('puppeteer-core');
 // Defines whether puppeteer runs Chrome in headless mode.
-let headless = true;
 let slowMo = 0;
-let executablePath = '/usr/bin/chromium-browser'
 
 Given('I visit {string}', function (string) {
     (async () => {
         const browser = await puppeteer.launch({
             executablePath: '/usr/bin/chromium-browser',
-            args: ['--disable-dev-shm-usage']
+            args: ['--disable-dev-shm-usage', '--headless']
         });
         const page = await browser.newPage();
         await page.goto(string);
